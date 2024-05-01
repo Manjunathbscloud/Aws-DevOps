@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "install pre-requisites packages for building a frontend static webapplication"
+  build:
+    commands:
+      - echo "executing build command to build a static web application, Add your build command below"
+      - echo "this is a simple web application wrrien in html code, so there is no build command, but if we used react or angular applcaition we need to add build command "
+      - echo "once build is done we need to add /dist folder in artifacts to copy build files in s3 in pipe stage"
+artifacts:
+  files:
+    - index.html
