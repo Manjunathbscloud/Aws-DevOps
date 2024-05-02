@@ -10,7 +10,8 @@ phases:
       - echo "executing build command to build a static web application, Add your build command below"
       - echo "this is a simple web application written in HTML code, so there is no build command"
       - echo "Injecting build number into HTML"
-      - sed -i "s|<span id=\"buildNumber\"></span>|<span id=\"buildNumber\">$CODEBUILD_BUILD_NUMBER</span>|g" ./index.html
+      - sed -i "s|<span id=\"buildNumber\"></span>|<span id=\"buildNumber\">$CODEBUILD_BUILD_NUMBER<\/span>|g" ./index.html
+
 
 artifacts:
   files:
