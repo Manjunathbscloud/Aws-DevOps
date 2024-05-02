@@ -4,5 +4,5 @@ phases:
   build:
     commands:
       - echo "we are going to create invalidation for cloudfront to clear the cache in edge locations"
-      - aws cloudfront create-invalidation --distribution-id E3PQOEHYTYY2D7 --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E37C72YKGVT1WV --paths "/*"
       - echo "invalidation completed"
